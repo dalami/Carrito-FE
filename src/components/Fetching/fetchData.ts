@@ -4,7 +4,7 @@ const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 export const fetchDataP = async (): Promise<ICard[]> => {
     try {
-      const products = await fetch(`${apiUrl?.replace(/\/$/, '')}/products`, {
+      const products = await fetch(`${apiUrl} products`, {
         next: { revalidate: 1200 },
       });
       if (!products.ok) {
