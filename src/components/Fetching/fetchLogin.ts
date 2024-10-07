@@ -5,7 +5,7 @@ const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 export const fetchLogin = async (UserLogin: ILogin) => {
     try {
-      const logueo = await fetch(`${apiUrl}/users/login`, {
+      const logueo = await fetch(`${apiUrl}users/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
