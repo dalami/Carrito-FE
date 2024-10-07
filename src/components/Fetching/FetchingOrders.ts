@@ -7,7 +7,7 @@ export const getAllOrders = async (
   token: string
 ): Promise<IOrders[]> => {
   try {
-    const response = await fetch(`${apiUrl}orders`, {
+    const response = await fetch(`${apiUrl}/orders`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
