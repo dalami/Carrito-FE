@@ -22,13 +22,13 @@ export default function RootLayout({
     <AuthProvider>
       
       <html lang="en">
-      <UserProvider>
+     
         <body className={inter.className}>
           <Nav />
           {children}
           <Footer />
         </body>
-        </UserProvider>
+        
       </html>
       </AuthProvider>
   );
